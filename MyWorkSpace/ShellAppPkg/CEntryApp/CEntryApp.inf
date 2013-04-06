@@ -1,0 +1,22 @@
+#
+# CEntryApp.inf
+#
+
+[Defines]
+    INF_VERSION                     = 0x00010006
+    BASE_NAME                       = CEntryApp
+    FILE_GUID                       = 6aa59eed-60dd-4231-8de2-36a114d32122
+    MODULE_TYPE                     = UEFI_APPLICATION
+    VERSION_STRING                  = 0.1
+    ENTRY_POINT                     = ShellCEntryLib
+
+[Sources]
+    CEntryApp.c
+
+[Packages]
+    MdePkg/MdePkg.dec
+    ShellPkg/ShellPkg.dec
+
+[LibraryClasses]
+    UefiLib
+    ShellCEntryLib

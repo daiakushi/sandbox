@@ -1,0 +1,21 @@
+#
+# ShellEntryApp.inf
+#
+
+[Defines]
+    INF_VERSION                     = 0x00010006
+    BASE_NAME                       = ShellEntryApp
+    FILE_GUID                       = 366ca424-ae60-4978-9b98-96c1c812ad01 
+    MODULE_TYPE                     = UEFI_APPLICATION
+    VERSION_STRING                  = 0.1
+    ENTRY_POINT                     = UefiAppMain
+
+[Sources]
+    ShellEntryApp.c
+
+[Packages]
+    MdePkg/MdePkg.dec
+
+[LibraryClasses]
+    UefiLib
+    UefiApplicationEntryPoint

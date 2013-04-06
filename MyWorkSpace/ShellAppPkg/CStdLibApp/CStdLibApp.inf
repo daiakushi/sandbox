@@ -1,0 +1,22 @@
+#
+# CStdLibApp.inf
+#
+
+[Defines]
+  INF_VERSION                     = 0x00010006
+  BASE_NAME                       = CStdLibApp 
+  FILE_GUID                       = 53f425a7-014b-4ef4-88fc-767e77bb6146 
+  MODULE_TYPE                     = UEFI_APPLICATION
+  VERSION_STRING                  = 0.1
+  ENTRY_POINT                     = ShellCEntryLib
+
+[Sources]
+  CStdLibApp.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  StdLib/StdLib.dec
+
+[LibraryClasses]
+  LibC
+  LibStdio
